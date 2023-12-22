@@ -13,3 +13,5 @@ Springboard */
 const filterOutOdds = (...nums) => nums.filter(num => num % 2 === 0);
 
 
+/* Write a function called findMin that accepts a variable number of arguments and returns the smallest argument: */
+const findMin = (...nums) => nums.reduce((min, num) => min <= num ? min : num);

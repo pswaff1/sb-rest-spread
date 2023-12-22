@@ -19,3 +19,8 @@ const findMin = (...nums) => nums.reduce((min, num) => min <= num ? min : num);
 
 /* Write a function called mergeObjects that accepts two objects and returns a new object which contains all the keys and values of the first object and second object. */
 const mergeObjects = (o1, o2) => ({...o1, ...o2});
+
+/* Write a function called doubleAndReturnArgs which accepts an array and a 
+variable number of arguments. The function should return a new array with 
+the original array values and all of additional arguments doubled. */
+const doubleAndReturnArgs = (numArray, ...nums) => [...numArray, ...(nums.map((num) => num * 2))];
